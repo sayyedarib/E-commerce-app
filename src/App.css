@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #d9d9d9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productCard {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: clamp(200px, 300px, 400px);
+  height: clamp(180px, 180px, 280px);
+  padding: 20px;
+  border-radius: 21px;
+  margin-bottom: 20px;
+}
+
+
+
+.productCard h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.productCard h3 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  gap: 0.1rem;
+}
+
+.productCard h3 span {
+  font-size: 30px;
+}
+
+.productCard p.lessStock {
+  color: red;
+}
+
+.productStructure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 2rem;
+}
+
+.productCard, .orderCard, .options div:hover {
+  transform:translateY(-10px);
+}
+
+.orderStructure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 2rem; 
+}
+
+.orderCard{
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: clamp(200px, 300px, 400px);
+  height: clamp(80px, 80px, 180px);
+  padding: 10px;
+  border-radius: 21px;
+  margin-bottom: 10px;
+}
+
+.orderCard h3{
+  color: rgb(37, 112, 72);
+}
+
+.options{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.feature{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: clamp(100px, 200px, 400px);
+  height: clamp(80px, 80px, 180px);
+  border-radius: 21px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options a{
+  text-decoration: none;
+color: black;
 }
