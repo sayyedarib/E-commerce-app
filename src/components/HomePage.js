@@ -1,14 +1,4 @@
 import React from "react";
-import OrderCardStructure from "./OrderCardStructure";
-import ProductCardStructure from "./ProductCardStructure";
-import ProductCard from "./ProductCard";
-// import { Link, Routes } from "react-router-dom";
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//     Redirect,
-//   } from "react-router-dom";
 
 export default function HomePage() {
   return (
